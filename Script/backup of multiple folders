@@ -1,0 +1,18 @@
+Shell Script to take backup of multiple folders in one compressed file
+
+
+
+#!/bin/bash
+
+#Specify folders whose backup is to be taken in variables
+bck1="/home/ubuntu/majedaar/Devops.txt"
+bck2="/home/ubuntu/majedaar/devops"
+
+#tar = Tape Archive tool for compression
+#Creating same backup tar file for all specified folders
+tar -cvf /home/ubuntu/majedaar/multiple_file.tar $bck1 $bck2 
+
+
+#Show the size of the folder
+du -sh
+
