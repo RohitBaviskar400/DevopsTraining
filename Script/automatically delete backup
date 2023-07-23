@@ -1,0 +1,9 @@
+Shell Script to automatically delete backup after certain days
+
+
+#!/bin/bash
+
+#see which one is old more than 7 days
+ls -l
+
+find "/home/ubuntu/majedaar/multiple_file.tar" -type f -mtime +5 -exec rm {} \;
