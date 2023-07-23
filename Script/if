@@ -1,1 +1,9 @@
-
+#!/bin/bash
+name=Shubham
+val=1
+if [ $val -eq 2 ]
+then
+        echo "yes, shubham logged in"
+else
+        echo "Val is different"
+fi
